@@ -1,4 +1,4 @@
-$(function(){
+  $(function(){
 	$(".total").hover(function(){
 		$(".total").find("ul").css("display","block");
 	},function(){

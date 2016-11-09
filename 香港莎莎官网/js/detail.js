@@ -1,4 +1,16 @@
-$(function(){	
+function sc_car(){
+	var sc_car=$.cookie("goods");
+	if(sc_car){
+		var arr=eval(sc_car);
+		var sc_num=0;
+		for(var i in arr){
+			sc_num+=Number(arr[i].num)
+		}
+		$(".th").html(sc_num);
+	}
+}
+$(function(){
+	sc_car()
 	$.get("brand.json",function(data){
 		var oUl = $("#json").find("ul");
 		for(var i = 0;i < data.length;i++){			

@@ -3,12 +3,75 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type = "text/css" href = "css/shopcar.css"/>
 		<script type="text/javascript" src = "js/jquery-1.10.1.min.js"></script>	
 		<script src="js/jquery.cookie.js"></script>
 		<script src="js/shopcar.js"></script>
 	</head>
 	<body>
-		<div class="goods">
+		<div id = "nav">
+				<div id = "left">
+				<p>欢迎光临莎莎网!<span id = "login"><a href = "login.html">登录</a></span><span>或</span><span id = "register"><a href = "register.html">免费注册</a></span></p>
+				</div>
+				<div id = "right">
+					<ul>
+						<li><a href = "#"><img src = "img/people.jpg"/> 我的账户<img class = "jian" src = "img/jian.jpg"/></a>
+							<div id = "des">
+								<p><a href = "#">我的订单</a></p>
+								<p><a href = "#">我的积分</a></p>
+								<p><a href = "#">我的优惠券</a></p>
+								<p><a href = "#">我的收藏</a></p>
+								<p><a href = "#">我的评价</a></p>
+							</div>
+						</li>
+						<li><a><img src = "img/shop1.jpg"/> 我的购物车</a>
+							<div id = "des1">
+								<p>购物车还没有商品,</p>
+								<p>快去挑选心爱的商品吧</p>
+							</div>
+						</li>
+						<li><a><img src = "img/521.jpg"/> 我的收藏</a></li>
+						<li><a>我的站内信</a></li>
+						<li><a>积分中心</a></li>
+						<li><a>Globle site</a></li>
+						<li><a>关注我们</a><span id = "fish"><img src = "img/c4.png">
+						<div id = "pic">
+							<img src = "img/71.jpg"/>
+						</div>
+						</span><span id = "weixin"><img src = "img/8d8.png">
+						<div id = "pic1"><img src = "img/929.jpg"/></div></span></li>
+					</ul>
+				</div>
+			</div>
+			<div id = "logo">
+				<p><img src = "img/0e9.png"/></p>
+			</div>
+			<div class="shopcar">
+				<p>你的购物车中的商品 <span>Your Shoping Cart</span></p>
+			</div>
+			<div class = "shop">
+				<div class = "product">
+					<input type="checkbox"/>香港直送<span class="product_span">商品名称</span>
+				
+				
+					<ul>						
+						<li>单价</li>
+						<li>数量</li>
+						<li>小计</li>
+					</ul>					
+				</div>
+			</div>
+			<div id = "line-right">
+					<ul>
+						<li>选购境外商品需知<br/>
+						<div class="bg"><img class= "people" src = "img/78.jpg"/></div><div class = "on">我的账户</div></li>
+						<li class= "tw"><img class="car" src="img/-1.jpg"/><p>购物车</p><div class="th">0</div><div class="tw-box"><div class='pay'>购物车结算</div></div></li>
+						<li class="hert"><div class ="he"><img class="sd" src = "img/hert.jpg"/></div><div class = "er">我的收藏</div><br/><div class="ej"><img src="img/time.jpg"/></div><div class= "as">浏览记录</div></li>
+						<li><div class = "first"><img src = "img/livechat.png"/></div><div class="hid">线上客服</div><div class= "we"><img class="hj" src= "img/qw.jpg"/></div><div class= "pi"><img src = "img/dcb.jpg"/></div><p clss= "last"><img src = "img/jk.PNG"/>Top</p></li>
+					</ul>
+				</div>
+			
+		<!--<div class="goods">
 			<ul></ul>
 		</div>
 		<div class="sc_right">
@@ -21,6 +84,6 @@
 		<ul>
 			
 		</ul>
-	</div>
+	</div>-->
 	</body>
 </html>

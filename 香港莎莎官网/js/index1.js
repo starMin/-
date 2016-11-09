@@ -1,4 +1,17 @@
+
+function sc_car(){
+	var sc_car=$.cookie("goods");
+	if(sc_car){
+		var arr=eval(sc_car);
+		var sc_num=0;
+		for(var i in arr){
+			sc_num+=Number(arr[i].num)
+		}
+		$(".th").html(sc_num);
+	}
+}
 $(function(){
+	sc_car()
 	$("#close").click(function(){
 	$("#top").remove();
 	})
@@ -154,6 +167,7 @@ $(function(){
 		$(".car").attr("src","img/vb1.jpg")
 	},function(){
 		$(this).css("background","#4C4C4C");
+		$(".car").attr("src","img/-1.jpg")
 	})
 	$(".he").hover(function(){
 		$(".er").stop().animate({right:77})

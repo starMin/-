@@ -1,5 +1,17 @@
 var _id = location.search.split("=")[1];
+function sc_car(){
+	var sc_car=$.cookie("goods");
+	if(sc_car){
+		var arr=eval(sc_car);
+		var sc_num=0;
+		for(var i in arr){
+			sc_num+=Number(arr[i].num)
+		}
+		$(".th").html(sc_num);
+	}
+}
 $(function(){
+	sc_car();
 	$("#navg ul li").hover(function(){
 		$(this).css("color","black")
 	},function(){
@@ -88,8 +100,8 @@ $(function(){
 						$.cookie('goods',cookieStr);
 						}
 		}
+		sc_car()
+		window.open("shopcar.html");
 	})
-	$(".th").html(("#input-id").val())
-	//alert($.cookie("goods"))
 	
 })
